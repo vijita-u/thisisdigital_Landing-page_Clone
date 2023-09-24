@@ -1,0 +1,517 @@
+@font-face {
+	font-family: "Cooper";
+	src: url("Cooper\ Light\ BT.ttf");
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-family: "Cooper", sans-serif;
+	scroll-behavior: smooth;
+}
+
+#main {
+	height: 100%;
+	width: 100%;
+	background-color: hsl(0, 0%, 100%);
+	position: relative;
+}
+
+#nav {
+	height: 6.25rem;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-inline: 1.875rem;
+	z-index: 999;
+	background-color: #fff;
+}
+
+#nav > h1 {
+	font-size: 1.9375rem;
+	font-weight: 100;
+}
+
+#nav > #part2 {
+	font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji,
+		Segoe UI Emoji;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+}
+
+#nav > #part2 > a {
+	text-decoration: none;
+	color: hsl(0, 0%, 13%);
+	margin: 1.25rem;
+}
+
+#nav > #part2 > a:nth-last-child(1) {
+	padding: 0.4375rem 1.125rem;
+	border-radius: 3.125rem;
+	border: 1px solid #000;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#nav > #part2 > a:nth-last-child(1) h5 {
+	z-index: 99;
+	font-weight: 500;
+	font-size: 1rem;
+	position: relative;
+}
+
+#nav > #part2 > a:nth-last-child(1)::before,
+#page1 > #hero-content #hero-CTA .CTA::before,
+#page2 > #about-us > .CTA::before {
+	content: "";
+	height: 100%;
+	width: 100%;
+	background-color: springgreen;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: scale(0, 1);
+	transform-origin: left;
+	transition: transform 0.5s;
+	transition-timing-function: cubic-bezier(0, 1, 2, 0);
+}
+
+#nav > #part2 > a:nth-last-child(1):hover::before,
+#page1 > #hero-content #hero-CTA .CTA:hover::before,
+#page2 > #about-us > .CTA:hover::before {
+	transform: scale(1);
+}
+
+#page1 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 6.25rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#page1 > #hero-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: -6%;
+}
+
+#page1 > #hero-content > h1 {
+	font-size: clamp(1.625rem, 4.6vw, 3.875rem);
+	font-weight: 100;
+	text-transform: capitalize;
+	width: 80%;
+	text-align: center;
+	z-index: 10;
+	margin-bottom: 1.875rem;
+}
+
+#page1 > #hero-content > h1 #special {
+	position: relative;
+}
+
+#page1 > #hero-content > h1 #special::after {
+	content: "";
+	background: url("https://thisisdigital.co.uk/dist/images/underline-green.svg");
+	position: absolute;
+	width: 100%;
+	height: 1rem;
+	bottom: -30%;
+	left: 50%;
+	transform: translate(-50%);
+	background-size: cover;
+}
+
+#page1 #img1 {
+	width: 17.5rem;
+	height: 26.25rem;
+	position: absolute;
+	top: 10%;
+	left: 6%;
+}
+
+#page1 #img2 {
+	width: 15.625rem;
+	height: 12.5rem;
+	position: absolute;
+	top: 8%;
+	right: 25%;
+}
+
+#page1 #img3 {
+	width: 16.25rem;
+	height: 15.625rem;
+	position: absolute;
+	top: 44%;
+	right: 10%;
+}
+
+#page1 img {
+	transition: margin 0.8s ease;
+}
+
+#page1 img:hover {
+	margin-top: -0.625rem;
+}
+
+#page2 {
+	width: 100%;
+	height: 70vh;
+	background-color: hsl(0, 0%, 0%);
+	position: relative;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#page2 > h5 {
+	font-size: 1.125rem;
+	font-family: "inter", sans-serif;
+	font-weight: 300;
+	margin-bottom: 1.875rem;
+	text-align: center;
+	margin-inline: 2rem;
+}
+
+#page2 > h1 {
+	width: 60%;
+	text-align: center;
+	font-size: clamp(1.5rem, 5vw, 3rem);
+	font-weight: 100;
+	margin-bottom: 1.875rem;
+}
+
+#about-us {
+	display: flex;
+	width: 11.25rem;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#hero-CTA {
+	z-index: 99;
+	display: flex;
+	width: 16.25rem;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#about-us h4,
+#hero-CTA h4 {
+	font-family: "inter", sans-serif;
+	font-weight: 400;
+	font-size: clamp(0.875rem, 3.3vw, 1.375rem);
+	flex-wrap: nowrap;
+}
+
+#about-us .CTA {
+	width: 33%;
+	height: 1.875rem;
+	border-radius: 3.125rem;
+	border: 1px solid #fff;
+	position: relative;
+	color: #373737;
+	overflow: hidden;
+}
+
+#hero-CTA .CTA {
+	width: 25%;
+	height: 1.875rem;
+	border-radius: 3.125rem;
+	border: 1px solid #000;
+	position: relative;
+	overflow: hidden;
+}
+
+#about-us .CTA svg {
+	position: absolute;
+	top: 0;
+	left: 20%;
+	object-fit: cover;
+	width: 60%;
+	height: 100%;
+}
+
+#hero-CTA .CTA svg {
+	position: absolute;
+	left: 12%;
+	object-fit: cover;
+	width: 80%;
+	height: 100%;
+}
+
+#page2 > h1 > #special-text {
+	position: relative;
+}
+
+#page2 > h1 > #special-text::after {
+	content: "";
+	position: absolute;
+	top: -9%;
+	left: -7%;
+	width: 120%;
+	height: 120%;
+	object-fit: cover;
+	background: url("https://thisisdigital.co.uk/dist/images/circle-green.svg");
+}
+
+#page3 {
+	width: 100%;
+	height: 90vh;
+}
+
+.swiper {
+	width: 100%;
+	height: 80%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 1.125rem;
+	background: #fff;
+	display: flex !important;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	object-fit: cover;
+	margin-bottom: 2.5rem;
+}
+
+.swiper-slide h3 {
+	font-size: clamp(1.5625rem, 5vw, 3.5rem);
+	font-weight: 100;
+	width: 70%;
+	margin: 0 2.25rem 2.5rem 2.25rem;
+}
+
+.swiper-slide h5 {
+	font-family: "inter", sans-serif;
+	font-size: 1.125rem;
+	font-weight: 500;
+	margin-bottom: 0.4375rem;
+	position: relative;
+}
+
+.swiper-slide h5::before {
+	content: "";
+	position: absolute;
+	top: 20%;
+	left: -16%;
+	border: 7px solid springgreen;
+	border-radius: 50%;
+}
+
+#ryman::before {
+	left: -6%;
+}
+
+.swiper-slide h6 {
+	color: gray;
+	font-family: "inter", sans-serif;
+	font-size: 1.125rem;
+	font-weight: 500;
+}
+
+.swiper-slide > #img-leicester {
+	width: 5rem;
+	height: 5rem;
+}
+
+.swiper-slide > #img-ryman {
+	height: 6.25rem;
+	width: 12.5rem;
+	object-fit: contain;
+}
+
+.swiper-slide > #img-brittany {
+	height: 6.25rem;
+	width: 12.5rem;
+	object-fit: contain;
+}
+
+#nav-toggle-checkbox,
+#nav-toggle-burger-menu,
+#toggle-label {
+	display: none;
+}
+
+#nav-toggle-burger-menu > #main-line {
+	width: 1.75rem;
+	height: 0.1875rem;
+	background-color: #000;
+	position: relative;
+	transition: opacity 0.3s ease;
+}
+
+#nav-toggle-burger-menu {
+	position: relative;
+}
+
+#nav-toggle-burger-menu > #first-line {
+	content: "";
+	position: absolute;
+	top: -0.5rem;
+	right: 0;
+	width: 2.375rem;
+	height: 0.1875rem;
+	background-color: #000;
+	transition: transform 0.5s ease;
+}
+
+#nav-toggle-burger-menu > #last-line {
+	content: "";
+	position: absolute;
+	bottom: -0.5rem;
+	right: 0;
+	width: 1.125rem;
+	height: 0.1875rem;
+	background-color: #000;
+	transition: transform 0.5s ease;
+}
+
+#nav-toggle-checkbox:checked ~ #toggle-label > #nav-toggle-burger-menu > #main-line {
+	opacity: 0;
+}
+
+#nav-toggle-checkbox:checked ~ #toggle-label > #nav-toggle-burger-menu > #first-line {
+	transform: rotate(45deg) translateY(30%);
+}
+
+#nav-toggle-checkbox:checked ~ #toggle-label > #nav-toggle-burger-menu > #last-line {
+	width: 2.375rem;
+	transform: translateY(-440%) rotate(-45deg);
+}
+
+@media (max-width: 75rem) {
+	#page1 #img1 {
+		width: 15.625rem;
+		height: 26.25rem;
+		position: absolute;
+		top: 10%;
+		left: 6%;
+	}
+
+	#page1 #img2 {
+		width: 15.625rem;
+		height: 9.375rem;
+		position: absolute;
+		top: 8%;
+		right: 25%;
+	}
+
+	#page1 #img3 {
+		width: 14.375rem;
+		height: 15.625rem;
+		position: absolute;
+		top: 44%;
+		right: 10%;
+	}
+}
+
+@media (max-width: 56.25rem) {
+	#toggle-label,
+	#nav-toggle-burger-menu {
+		display: unset;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: #fff;
+		position: absolute;
+		top: 6.25rem;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		transform: scale(1, 0);
+		transform-origin: bottom;
+		transition: transform 0.6s;
+		transition-timing-function: cubic-bezier(0.1, 0.6, 0.4, 1);
+	}
+
+	nav > a {
+		font-family: "Cooper", sans-serif;
+		font-weight: bold;
+		font-size: 1.625rem;
+		opacity: 0;
+		transition: opacity 0.1s ease;
+	}
+
+	#nav-toggle-checkbox:checked ~ nav {
+		transform: scale(1);
+	}
+
+	#nav-toggle-checkbox:checked ~ nav a {
+		opacity: 1;
+		transition: opacity 0.3s ease;
+	}
+}
+
+@media (max-width: 50rem) {
+	#nav h1 {
+		font-size: 1.625rem;
+	}
+
+	#page1 > #img2,
+	#page1 > #img3 {
+		display: none;
+	}
+
+	#page1 {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#page1 > #hero-content {
+		width: 100%;
+		margin: unset;
+	}
+
+	#page1 > #hero-content > h1 {
+		width: 50%;
+	}
+
+	#page1 > #img1 {
+		background-color: aquamarine;
+		position: unset;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+@media (max-width: 18.75rem) {
+	#nav h1 {
+		font-size: 1.375rem;
+	}
+}

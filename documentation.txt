@@ -1,0 +1,21 @@
+What is this ? 
+    Landing Page Clone of 'https://thisisdigital.co.uk/' which includes important sections like -
+    Responsive nav bar,
+    Scrolling animations using GSAP Scroll Trigger &
+    Carousel using Swiper JS.
+
+Why ?
+    To learn about the following - 
+    1. GSAP animations
+    2. GSAP Scroll Trigger
+    3. Swiper JS
+
+Resources used ?
+    Original landing page - 'https://thisisdigital.co.uk/'
+    My version - ''
+    Youtube video - 'https://youtu.be/H1EYbOzF194'
+
+Additional features apart from the video ?
+    A fully responsive website including a responsive nav bar
+    Have tried to make the clone parts closer to the original as much as possible -
+        Eg; the navbar burger menu animation
