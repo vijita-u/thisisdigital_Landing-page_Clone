@@ -41,7 +41,7 @@ This project marked my first dive into the world of GSAP, Scroll Trigger, and Sw
 
 ## Additional Features from my end
 
-The website clone comprises three essential sections: the hero section, a secondary page, and a carousel page. These were meticulously crafted to serve as my hands-on learning grounds for mastering the trio of technologies I set out to explore: GSAP timelines, ScrollTrigger, and SwiperJS. While the tutorial provided valuable guidance, I took additional initiative to ensure the website's complete responsiveness, replicating elements such as the burger menu, hero section, and carousel to ensure an optimal mobile user experience. This aspect, not covered in the tutorial, significantly enhanced my skills in responsive design.
+The website clone comprises three essential sections: the hero section, a secondary page, and a carousel page. These were meticulously crafted to serve as my hands-on learning grounds for mastering the trio of technologies I set out to explore: GSAP timelines, ScrollTrigger, and SwiperJS. While the tutorial offered valuable insights, I went the extra mile to ensure the website's full responsiveness. I replicated key elements like the burger menu, hero section, and carousel for the mobile view, prioritizing an enhanced mobile user experience. This aspect, which was not addressed in the tutorial, played a pivotal role in advancing my expertise in responsive design.
 
 ## Credits
 
